@@ -5,7 +5,7 @@
 #include "hardware/clocks.h"
 #include "ws2812b.pio.h"
 
-#define LED_RED 11
+#define LED_RED 13
 #define LED_COUNT 25
 #define MATRIZ_LED_PIN 7
 #define BUTTON_PIN_0 5 //Botao B DECREMENT
@@ -73,7 +73,7 @@ void config_number_led(int number){
             if(numbers_indices[number][i] == 0){
                 break;
             }
-            set_led(numbers_indices[number][i],0,10,0);
+            set_led(numbers_indices[number][i],0,1,0);
         }
     };
 
